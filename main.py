@@ -18,7 +18,7 @@ bot = telebot.TeleBot("6978250041:AAEzindZxm3xaexCXbm6-4nwnl6tLP8yAYM",parse_mod
 @bot.message_handler(commands=["start"])
 def greet(msg):
     user = f"{user_link(msg.from_user)}"
-    bot.reply_to(msg,f"Hello {user} yo good;\n send /getquote to get a quote",reply_markup=markup)
+    bot.reply_to(msg,f"""Hello {user}This is random quote generator bot.to get a quote send /getquote to get a quote""",reply_markup=markup)
 
 @bot.message_handler(func=lambda m:True)
 def generateQuote(msg):
