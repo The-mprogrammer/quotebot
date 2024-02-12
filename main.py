@@ -28,7 +28,7 @@ def generateQuote(msg):
     data = json.loads(request.text)
     quote = data['content']
     author = data['author']
-    content = f""" {quote} \n BY {author}"""
+    content = f""" ```{quote} \n BY {author}```"""
     print(content)
 
     if "/getquote" in msg.text:
