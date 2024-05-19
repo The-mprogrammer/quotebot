@@ -13,7 +13,7 @@ group = InlineKeyboardButton(text="Group",url="t.me/neuralg")
 channel = InlineKeyboardButton(text="Channel",url="t.me/neuralp")
 markup.add(group,channel)
 
-bot = telebot.TeleBot("6978250041:AAEzindZxm3xaexCXbm6-4nwnl6tLP8yAYM",parse_mode="HTML")
+bot = telebot.TeleBot("6934289676:AAE0COsWQoMTj4TR6hZGbVvhAZqDlUVZvjw",parse_mode="HTML")
 
 @bot.message_handler(commands=["start"])
 def greet(msg):
